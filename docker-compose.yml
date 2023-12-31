@@ -19,6 +19,7 @@ services:
     environment:
       - ME_CONFIG_MONGODB_ADMINUSERNAME=rootuser
       - ME_CONFIG_MONGODB_ADMINPASSWORD=rootpass
+      #aşağdaki iki tanımlama yapılmayınca mongo express arayüzüne girerken user ve pass girilse bile hata veriyor
       - ME_CONFIG_BASICAUTH_USERNAME=rootuser
       - ME_CONFIG_BASICAUTH_PASSWORD=rootpass
       - ME_CONFIG_MONGODB_SERVER=mongodb
